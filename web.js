@@ -8,7 +8,7 @@ var buffer = new Buffer(64);
 
 app.get('/', function(request, response) {
 //  response.send('Hello World2!');
-  buffer = fs.readfile(infile);
+  buffer = fs.readFileSync(infile);
   response.send(buffer.toString());
 });
 
