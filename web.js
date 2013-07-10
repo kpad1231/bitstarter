@@ -7,7 +7,7 @@ var buffer = new Buffer(64);
 app.get('/', function(request, response) {
 //  response.send('Hello World2!');
   buffer = fs.readfile('index.html');
-  response.send(buf.toString(buffer));
+  response.send(buffer.toString());
 });
 
 var port = process.env.PORT || 5000;
